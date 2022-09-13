@@ -1,0 +1,12 @@
+.article {
+    background-color: azure;
+}
+
+.spaces {
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    margin: 50px 200px;
+    padding: 10px 10px;
+  
+}
