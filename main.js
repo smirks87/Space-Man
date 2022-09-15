@@ -1,44 +1,54 @@
-const guessAgain = document.getElementById('guess');
-const letterButtons = document.querySelector('article > button');
-const playAgain = document.getElementById('play-again');
-const space1 = document.querySelector('letters1');
-const space2 = document.querySelector('letters2');
-const space3 = document.querySelector('letters3');
-const space4 = document.querySelector('letters4');
+const form = document.querySelector('.form');
+const word = ["reactor", "engine", "wings", "booster", "battery"];
+const body = document.querySelector('.body');
 
-let correctGuesses = 0;
-let wrongGuesses = 5;
-let wordsArray = ['Fast', 'Mask', 'Pass', 'Gasp', 'Last', 'Past'];
+const divLetter1 = document.querySelector('#letter1');
+const divLetter2 = document.querySelector('#letter2');
+const divLetter3 = document.querySelector('#letter3');
+const divLetter4 = document.querySelector('#letter4');
+const divLetter5 = document.querySelector('#letter5');
+const divLetter6 = document.querySelector('#letter6');
+const divLetter7 = document.querySelector('#letter7');
 
+const restart = document.getElementById('.restart');
+const exit = document.getElementById('.exit');
+const submit = document.getElementById('submit')
+let guessLetter = '';
+const correctGuesses = [];
+const wrongGuesses = false;
 
-document.querySelector('article')
-  .addEventListener('click', handleClick);
-playAgain.addEventListener('click', init);
+form.addEventListener('submit', function (event) {
+	event.preventDefault();
+	guessLetter = document.getElementById('letter').value;
 
+	for (let i = 0; i < word.length; i++) {
+		console.log(word[i]);
+		if (word[i] === guessLetter) {
+			console.log(true);
+			correctGuesses.push(guessLetter);
+			console.log(correctGuesses);
+		}
+		if (word[i] == correctGuesses[i]) {
+			word.innerHTML = guessLetter;
+		}
+	}
+	// console.log(guessLetter);
+});
+console.log(word.length);
 
-function init() {
-  wrongGuesses = [];
-  const randomIdx = Math.floor(Math.random() * wordsArray.length);
-  secret = wordsArray[randomIdx].toUpperCase().split('');
-  
+console.log(word[2]);
 
-function Buttons() {
-  letterButtons.forEach(function(btn) {
-    const ltr = btn.textContent;
-    if (wrongGuesses.includes(ltr)) {
-      btn.className = 'wrong';
-    } else if (guess.includes(ltr)) {
-      btn.className = 'correct';
-    } else {
-      btn.className = '';
-    }
-  });
-  
+for (let i = 0; i < word.length; i++) {
+	let div = document.createElement('div');
+	div.classList.add('word');
+	console.log(word);
 }
 
-function getGameStatus() {
-  if (!guess.includes('_')) return 'W';
-  if (wrongGuesses.length > MAX_WRONG_GUESSES) return 'L';
-  return null;
-}
-`
+restart.addEventListener('click', function (event) {
+	alert();
+	console.log('click');
+});
+
+exit.addEventListener('click', function (event) {
+	console.log(event);
+});

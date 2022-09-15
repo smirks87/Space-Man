@@ -1,12 +1,113 @@
-.article {
-    background-color: azure;
+.container {
+    display: flex;
+    justify-content: space-between;
+
+    flex-direction: row;
+    background: aqua;
+    max-width: 800px;
+    max-height: 600px;
+    margin: 20px 20px;
+  
 }
 
-.spaces {
+
+
+
+.body {
     display: flex;
-    flex-direction: column;
-    background-color: bisque;
-    margin: 50px 200px;
-    padding: 10px 10px;
-  
+    background: black;
+    
+}
+
+.letter1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: navy;
+    color: white;
+    padding: 30px 20px;
+    margin: 300px 10px;
+}
+
+.letter2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: navy;
+    color: white;
+    padding: 30px 20px;
+    margin: 300px 10px;
+}
+
+.letter3 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: navy;
+    color: white;
+    padding: 30px 20px;
+    margin: 300px 10px;
+}
+
+.letter4 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: navy;
+    color: white;
+    padding: 30px 20px;
+    margin: 300px 10px;
+}
+
+.letter5 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: navy;
+    color: white;
+    padding: 30px 20px;
+    margin: 300px 10px;
+}
+
+
+.letter6 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: navy;
+    color: white;
+    padding: 30px 20px;
+    margin: 300px 10px;
+}
+
+.letter7{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: navy;
+    color: white;
+    padding: 30px 20px;
+    margin: 300px 10px;
+}
+
+.submit {
+    padding: 1px 5px;
+    margin: 10px 10px;
+}
+
+.form {
+    margin: 20px 20px;
+    align-self: center;
+}
+
+.controls {
+    justify-content: space-between;
+    margin:  30px;
+    padding: 10px 100px;
+}
+
+.h2 {
+    text-align: center;
+    margin: 10px 10px;
+    padding: 20px 20px;
 }
