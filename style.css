@@ -2,22 +2,32 @@
     display: flex;
     justify-content: space-between;
 
-    flex-direction: row;
+    flex-direction: column;
     background: aqua;
-    max-width: 800px;
-    max-height: 600px;
+    width: 90%;
+    min-height: 80%;
     margin: 20px 20px;
   
 }
 
+.top-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+.wrong-letters {
+    border: solid;
+    min-width: 100px;
+    height: 50px;
+    margin: 25px;
+}
 
-
-.body {
+/* .body {
     display: flex;
     background: black;
-    
-}
+     */
+/* } */
 
 .word{
     display: flex;
@@ -25,9 +35,9 @@
     flex-direction: row;
     background-color: navy;
     color: white;
-    width: 500px;
+    width: 50px;
     padding: 30px 20px;
-    margin: 300px 10px;
+    margin: 30px 10px;
 }
 
 
@@ -45,10 +55,4 @@
     justify-content: space-between;
     margin:  30px;
     padding: 10px 100px;
-}
-
-.h2 {
-    text-align: center;
-    margin: 10px 10px;
-    padding: 20px 20px;
 }
