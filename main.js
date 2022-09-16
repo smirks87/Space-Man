@@ -1,54 +1,53 @@
-const form = document.querySelector('.form');
-const word = ["reactor", "engine", "wings", "booster", "battery"];
+const input = document.querySelector('.input');
+const word = ['reactor', 'engine', 'wings', 'booster', 'battery'];
 const body = document.querySelector('.body');
 
-const divLetter1 = document.querySelector('#letter1');
-const divLetter2 = document.querySelector('#letter2');
-const divLetter3 = document.querySelector('#letter3');
-const divLetter4 = document.querySelector('#letter4');
-const divLetter5 = document.querySelector('#letter5');
-const divLetter6 = document.querySelector('#letter6');
-const divLetter7 = document.querySelector('#letter7');
+const divWord = document.querySelector('.word');
 
-const restart = document.getElementById('.restart');
-const exit = document.getElementById('.exit');
-const submit = document.getElementById('submit')
-let guessLetter = '';
+const restart = document.getElementById('restart');
+const exit = document.getElementById('exit');
+const submit = document.getElementById('submit');
+// let guessLetter = '';
 const correctGuesses = [];
-const wrongGuesses = false;
+const wrongGuesses = [];
 
-form.addEventListener('submit', function (event) {
+let randomWord = '';
+
+
+function getRandomWord() {
+	
+	let randomIndex = Math.floor(Math.random() * word.length);
+	let randomWord = word[randomIndex];
+	console.log(randomWord);
+}
+// function compareLetter() {
+// 	randomWord.includes(form.value)
+// }
+function compareLetter(event) {
 	event.preventDefault();
-	guessLetter = document.getElementById('letter').value;
-
-	for (let i = 0; i < word.length; i++) {
-		console.log(word[i]);
-		if (word[i] === guessLetter) {
+	let guessLetter = input.innerHTML;
+	console.log(guessLetter);
+	for (let i = 0; i < randomWord.length; i++) {
+		// console.log(randomWord);
+		if (randomWord[i] === guessLetter) {
 			console.log(true);
 			correctGuesses.push(guessLetter);
 			console.log(correctGuesses);
 		}
-		if (word[i] == correctGuesses[i]) {
+		if (randomWord[i] == correctGuesses[i]) {
 			word.innerHTML = guessLetter;
 		}
 	}
-	// console.log(guessLetter);
-});
-console.log(word.length);
-
-console.log(word[2]);
-
-for (let i = 0; i < word.length; i++) {
-	let div = document.createElement('div');
-	div.classList.add('word');
-	console.log(word);
 }
 
-restart.addEventListener('click', function (event) {
-	alert();
-	console.log('click');
-});
+submit.addEventListener('submit', compareLetter);
 
-exit.addEventListener('click', function (event) {
-	console.log(event);
-});
+// for (let i = 0; i < word.length; i++) {
+// 	let div = document.createElement('div');
+// 	div.classList.add('word');
+// 	// console.log(word);
+// }
+
+restart.addEventListener('click', getRandomWord);
+
+exit.addEventListener('click', function (event) {});

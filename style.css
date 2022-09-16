@@ -19,76 +19,17 @@
     
 }
 
-.letter1{
+.word{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     background-color: navy;
     color: white;
+    width: 500px;
     padding: 30px 20px;
     margin: 300px 10px;
 }
 
-.letter2 {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    background-color: navy;
-    color: white;
-    padding: 30px 20px;
-    margin: 300px 10px;
-}
-
-.letter3 {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    background-color: navy;
-    color: white;
-    padding: 30px 20px;
-    margin: 300px 10px;
-}
-
-.letter4 {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    background-color: navy;
-    color: white;
-    padding: 30px 20px;
-    margin: 300px 10px;
-}
-
-.letter5 {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    background-color: navy;
-    color: white;
-    padding: 30px 20px;
-    margin: 300px 10px;
-}
-
-
-.letter6 {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    background-color: navy;
-    color: white;
-    padding: 30px 20px;
-    margin: 300px 10px;
-}
-
-.letter7{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    background-color: navy;
-    color: white;
-    padding: 30px 20px;
-    margin: 300px 10px;
-}
 
 .submit {
     padding: 1px 5px;

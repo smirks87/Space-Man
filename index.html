@@ -6,33 +6,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>WORD SCRAMBLE</title>
 		<link rel="stylesheet" href="style.css" />
-		<script defer class="main.js"></script>
+		<script defer src="main.js"></script>
 	</head>
-    <header>
-    </header>
+	<header></header>
 	<body>
-        <div class="container">
-            <div class="top-layer"></div>
+		<div class="container">
+			<div class="top-layer"></div>
 			<div class="Chances"></div>
 			<span class="score">Score</span>
-				<div class="letter1"></div>
-				<div class="letter2"></div>
-				<div class="letter3"></div>
-				<div class="letter4"></div>
-				<div class="letter5"></div>
-				<div class="letter6"></div>
-				<div class="letter7"></div>
+			<div class="word"></div>
 			<div class="answers"></div>
 			<form class="form">
 				<label for="letter">Guess a letter</label>
-				<input type="text" id="letter" />
+				<input class="input" type="text" id="letter" />
 				<button class="submit" id="submit">Submit</button>
 			</form>
 			<div class="footer"></div>
 		</div>
 	</body>
 	<footer>
-		<button class="controls" id="restart">Restart</button>
+		<button class="controls" id="restart">generate word</button>
 		<button class="controls" id="exit">Exit</button>
 	</footer>
 </html>
