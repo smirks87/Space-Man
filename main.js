@@ -8,23 +8,39 @@ const restart = document.getElementById('restart');
 const exit = document.getElementById('exit');
 const submit = document.getElementById('submit');
 // let guessLetter = '';
-const correctGuesses = [];
-const wrongGuesses = [];
+let correctGuesses = [];
+let wrongGuesses = [];
 let blankWord = [];
-let randomIndex = Math.floor(Math.random() * word.length);
+let currentWord = word.length
+let randomIndex = Math.floor(Math.random() * currentWord);
 let randomWord = word[randomIndex];
 console.log(randomWord);
 function getRandomWord() {
-	let randomIndex = Math.floor(Math.random() * word.length);
-	let randomWord = word[randomIndex];
+	currentWord--
+	 randomIndex = Math.floor(Math.random() * currentWord);
+	 randomWord = word[currentWord];
 	console.log(randomWord);
+	wrongGuesses = []
+	correctGuesses = []
+	fillBlankWord()
+	console.log(blankWord)
+	divWord.innerHTML = blankWord
 }
 
-function fillBlankWord() {
-	for (let i = 0; i < randomWord.length; i++) blankWord.push('_');
-	divWord.innerHTML = blankWord;
+// function compareWords() {
+	// 	blankWord.toString();
+	// 	console.log(blankWord);
+	// 	if ((blankWord = randomWord)) {
+		// 		// blankWord = []
+		// 	}
+		// }
+		
+		function fillBlankWord() {
+			blankWord = []
+			for (let i = 0; i < randomWord.length; i++) blankWord.push('_');
+			divWord.innerHTML = blankWord;
 }
-fillBlankWord();
+
 
 function compareLetter(event) {
 	event.preventDefault();
@@ -36,12 +52,11 @@ function compareLetter(event) {
 			console.log(true);
 			correctGuesses.push(guessLetter);
 			console.log(correctGuesses);
-			blankWord.splice(i, 1, guessLetter)
+			blankWord.splice(i, 1, guessLetter);
 			divWord.innerHTML = blankWord;
-			console.log(blankWord)
-		} 
+			console.log(blankWord);
+		}
 		if (blankWord[i] === guessLetter) {
-			
 		}
 	}
 	if (!randomWord.includes(guessLetter)) {
@@ -52,7 +67,6 @@ function compareLetter(event) {
 		wrongLetters.innerHTML = wrongGuesses;
 	}
 }
-	
 
 // function fillCorrectWord() {
 // 	for (let i = 0; i < randomWord.length; i++) {
