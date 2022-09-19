@@ -7,19 +7,13 @@ every time the player guesses a correct letter they get to select another letter
 
 ![alt](<blockquote class="imgur-embed-pub" lang="en" data-id="kog64EE"><a href="https://imgur.com/kog64EE">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>)
 
-
-
 TECHNOLOGY USED:
 HTML, JavaScript, and CSS
-
-
 
 INSTALLATION:
 No installation required you just have to copy and paste the link into your browser to play the game
 
-[](https://taupe-peony-8f664c.netlify.app/)
-
-
+https://taupe-peony-8f664c.netlify.app
 
 USER STORIES:
 
@@ -29,13 +23,9 @@ USER STORIES:
 - As a user, I want the wrong letters to populate in another box so the player knows they guessed a wrong letter.
 - As a user, I want the game to end after the player guesses the letters for all the words
 
-
-
 WIRE FRAMES:
 
 ![alt] (<blockquote class="imgur-embed-pub" lang="en" data-id="FSlZF2B"><a href="https://imgur.com/FSlZF2B">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>)
-
-
 
 UNSOLVED PROBLEMS:
 
