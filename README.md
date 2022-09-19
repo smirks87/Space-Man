@@ -10,9 +10,10 @@ every time the player guesses a correct letter they get to select another letter
 TECHNOLOGY USED:
 html, javaScript, and css
 
-
 INSTALLATION:
-No installation required just have to click the link to play the game
+No installation required just have to copy and paste the link into your browser to play the game
+
+[](https://taupe-peony-8f664c.netlify.app/)
 
 USER STORIES:
 
@@ -20,7 +21,7 @@ USER STORIES:
 - As a user, I want to have an input bar for guesses to be submitted into.
 - As a user, I want the right guessed letter to populate in the correct area in th correct order.
 - As a user, I want the wrong letters to populate in another box so the player knows they guessed a wrong letter.
-- As a user, I want the game to end after the player guesses the letters for all the words 
+- As a user, I want the game to end after the player guesses the letters for all the words
 
 WIRE FRAMES:
 
@@ -31,4 +32,4 @@ UNSOLVED PROBLEMS:
 I could not get the game to show the end screen saying you win!
 also could not get the wrong letters box to refresh when a new word is generated
 
-my biggest hurdle was getting the input box to work and populate the letters where they belong also had a lot of trouble getting it to cycle through the words and the correct amount of spaces to fit the length of the word it was generating 
+my biggest hurdle was getting the input box to work and populate the letters where they belong also had a lot of trouble getting it to cycle through the words and the correct amount of spaces to fit the length of the word it was generating
