@@ -25,3 +25,10 @@ USER STORIES:
 WIRE FRAMES:
 
 ![alt] (<blockquote class="imgur-embed-pub" lang="en" data-id="FSlZF2B"><a href="https://imgur.com/FSlZF2B">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>)
+
+UNSOLVED PROBLEMS:
+
+I could not get the game to show the end screen saying you win!
+also could not get the wrong letters box to refresh when a new word is generated
+
+my biggest hurdle was getting the input box to work and populate the letters where they belong also had a lot of trouble getting it to cycle through the words and the correct amount of spaces to fit the length of the word it was generating 

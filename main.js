@@ -9,14 +9,12 @@ const wrongLetters = document.querySelector('.wrong-letters');
 const restart = document.getElementById('restart');
 const exit = document.getElementById('exit');
 const submit = document.getElementById('submit');
-// let guessLetter = '';
 let correctGuesses = [];
 let wrongGuesses = [];
 let blankWord = [];
 let currentWord = word.length;
 let randomIndex = Math.floor(Math.random() * currentWord);
 let randomWord = word[randomIndex];
-
 
 function gameStart() {
 	if (gameIsOver === false) {
@@ -40,13 +38,6 @@ function getRandomWord() {
 		divWord.innerHTML = blankWord;
 	}
 }
-// function compareWords() {
-// 	blankWord.toString();
-// 	console.log(blankWord);
-// 	if ((blankWord = randomWord)) {
-// 		// blankWord = []
-// 	}
-// }
 
 function fillBlankWord() {
 	if (randomWord) {
@@ -59,14 +50,11 @@ function fillBlankWord() {
 function compareLetter(event) {
 	event.preventDefault();
 	let guessLetter = input.value;
-	console.log(guessLetter);
-	console.log(randomWord);
 	for (let i = 0; i < randomWord.length; i++) {
 		if (randomWord[i] === guessLetter) {
 			correctGuesses.push(guessLetter);
 			blankWord.splice(i, 1, guessLetter);
 			divWord.innerHTML = blankWord;
-			
 		}
 		if (blankWord[i] === guessLetter) {
 		}
@@ -85,11 +73,6 @@ function gameOver() {
 }
 gameOver();
 
-
 submit.addEventListener('click', compareLetter);
 
-
-
 restart.addEventListener('click', getRandomWord);
-
-
